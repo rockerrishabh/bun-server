@@ -1,7 +1,7 @@
 import { Hono } from "hono";
 import { auth } from "./routes/auth";
 
-const app = new Hono().basePath("/api");
+export const app = new Hono().basePath("/api");
 
 app.get("/", (c) => {
   return c.text("Hello Hono!");
