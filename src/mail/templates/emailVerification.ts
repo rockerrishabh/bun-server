@@ -1,5 +1,5 @@
 export const emailVerification = async (to: string, token: string) => {
-  const confirmationURL = `http://localhost:5000/api/auth/verify/${token}`;
+  const confirmationURL = `http://localhost:3000/api/auth/verify/${token}`;
   const subject = "Verify your Account on Coding Duniya!";
   const html = `<!DOCTYPE html>
   <html>
