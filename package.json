@@ -1,14 +1,16 @@
 {
   "scripts": {
     "dev": "bun run --hot src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "start": "bun run dist/index.js",
     "migrate": "drizzle-kit generate:pg",
     "push": "drizzle-kit push:pg",
-    "studio": "drizzle-kit studio"
+    "studio": "drizzle-kit studio --port 5555"
   },
   "dependencies": {
     "dotenv": "^16.4.1",
     "drizzle-orm": "^0.29.3",
-    "hono": "^3.12.12",
+    "hono": "^4.0.1",
     "nanoid": "^5.0.5",
     "nodemailer": "^6.9.9",
     "pg": "^8.11.3",

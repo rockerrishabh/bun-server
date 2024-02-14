@@ -9,4 +9,7 @@ export default {
   dbCredentials: {
     ...config,
   },
+  verbose: true,
+  strict: true,
+  
 } satisfies Config;

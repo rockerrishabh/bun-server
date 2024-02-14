@@ -1,5 +1,5 @@
 export const emailVerification = async (to: string, token: string) => {
-  const confirmationURL = `http://localhost:3000/api/auth/verify/${token}`;
+  const confirmationURL = `https://api.codingduniya.online/api/auth/verify/${token}`;
   const subject = "Verify your Account on Coding Duniya!";
   const html = `<!DOCTYPE html>
   <html>
@@ -100,7 +100,7 @@ export const emailVerification = async (to: string, token: string) => {
           <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
             <tr>
               <td align="center" valign="top" style="padding: 36px 24px;">
-                <a href="http://localhost:3000" target="_blank" style="display: inline-block;">
+                <a href="https://codingduniya.online" target="_blank" style="display: inline-block;">
                  Coding Duniya
                 </a>
               </td>
@@ -136,7 +136,7 @@ export const emailVerification = async (to: string, token: string) => {
           <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
             <tr>
               <td align="left" bgcolor="#ffffff" style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
-                <p style="margin: 0;">Tap the button below to confirm your email address. If you didn't create an account with <a href="http://localhost:3000">Coding Duniya</a>, you can safely delete this email.</p>
+                <p style="margin: 0;">Tap the button below to confirm your email address. If you didn't create an account with <a href="https://codingduniya.online">Coding Duniya</a>, you can safely delete this email.</p>
               </td>
             </tr>
             <tr>
@@ -186,7 +186,7 @@ export const emailVerification = async (to: string, token: string) => {
             </tr>
             <tr>
               <td align="center" bgcolor="#e9ecef" style="padding: 12px 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #666;">
-                <p style="margin: 0;">To stop receiving these emails, you can <a href="http://localhost:3000" target="_blank">unsubscribe</a> at any time.</p>
+                <p style="margin: 0;">To stop receiving these emails, you can <a href="https://codingduniya.online" target="_blank">unsubscribe</a> at any time.</p>
                 <p style="margin: 0;">Paste 1234 S. Broadway St. City, State 12345</p>
               </td>
             </tr>
