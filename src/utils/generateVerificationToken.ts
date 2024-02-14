@@ -1,4 +1,3 @@
-import { nanoid } from "nanoid";
 import { sign } from "hono/jwt";
 import { eq } from "drizzle-orm";
 import { db } from "../db";

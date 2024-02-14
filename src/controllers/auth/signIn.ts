@@ -8,7 +8,6 @@ import { sendMail } from "../../mail/sendMail";
 import type { SignInContext } from "../../types/body";
 import { db } from "../../db";
 import { generateVerificationToken } from "../../utils/generateVerificationToken";
-import { nanoid } from "nanoid";
 
 export const signIn = async (c: Context) => {
   const refresh_token = await getCookie(c, "refreshToken");
