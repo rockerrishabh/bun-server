@@ -152,7 +152,8 @@ export const userRoutes = new Elysia().use(DbStore).group("/user", (app) =>
           cookie.refresh_token.set({
             httpOnly: true,
             path: "/",
-            sameSite: "strict",
+            sameSite: "none",
+            secure: true,
             value: refreshToken,
             expires: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000),
           });
